@@ -1,0 +1,613 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "m plus 1p";
+  color: rgb(59, 59, 59);
+  background-color: #eee;
+}
+
+.container {
+  width: 1250px;
+  margin: 0 auto;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#mainheader {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding-bottom: 20px;
+  background-color: #eee;
+}
+#mainheader .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid rgb(190, 190, 190);
+  background-color: #eee;
+}
+#mainheader ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+#mainheader ul li {
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 3px;
+}
+#mainheader ul li:active {
+  border: 1px solid black;
+}
+
+input {
+  width: 100%;
+  margin: 50px 0;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid gray;
+}
+input:hover {
+  box-shadow: 0 0 20px rgb(0, 153, 255);
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 15px;
+  margin-bottom: 80px;
+}
+.products .product {
+  height: 51vh;
+}
+.products .product-1 {
+  grid-column: span 1;
+  grid-row: span 1;
+  background-color: white;
+  overflow: hidden;
+}
+.products .product-1 .prem-h {
+  background-color: #424649;
+  width: 100%;
+  height: 100px;
+  margin-top: 110%;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 0 20px 30px 20px;
+}
+.products .product-1 .prem-h i {
+  color: yellow;
+}
+.products .product-1:hover .prem-h {
+  margin-top: 83%;
+}
+.products .product-2 {
+  grid-column: span 1;
+  grid-row: span 1;
+  background-color: white;
+  overflow: hidden;
+}
+.products .product-2 .prem-h {
+  background-color: #424649;
+  width: 100%;
+  height: 100px;
+  margin-top: 110%;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 0 20px 30px 20px;
+}
+.products .product-2 .prem-h i {
+  color: yellow;
+}
+.products .product-2:hover .prem-h {
+  margin-top: 83%;
+}
+.products .product-3 {
+  grid-column: span 1;
+  grid-row: span 1;
+  background-color: white;
+  overflow: hidden;
+}
+.products .product-3 .prem-h {
+  background-color: #424649;
+  width: 100%;
+  height: 100px;
+  margin-top: 110%;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 0 20px 30px 20px;
+}
+.products .product-3 .prem-h i {
+  color: yellow;
+}
+.products .product-3:hover .prem-h {
+  margin-top: 83%;
+}
+.products .product-4 {
+  grid-column: span 1;
+  grid-row: span 1;
+  background-color: white;
+  overflow: hidden;
+}
+.products .product-4 .prem-h {
+  background-color: #424649;
+  width: 100%;
+  height: 100px;
+  margin-top: 110%;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 0 20px 30px 20px;
+}
+.products .product-4 .prem-h i {
+  color: yellow;
+}
+.products .product-4:hover .prem-h {
+  margin-top: 83%;
+}
+.products .product-5 {
+  grid-column: span 1;
+  grid-row: span 1;
+  background-color: white;
+  overflow: hidden;
+}
+.products .product-5 .prem-h {
+  background-color: #424649;
+  width: 100%;
+  height: 100px;
+  margin-top: 110%;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 0 20px 30px 20px;
+}
+.products .product-5 .prem-h i {
+  color: yellow;
+}
+.products .product-5:hover .prem-h {
+  margin-top: 83%;
+}
+.products .product-6 {
+  grid-column: span 1;
+  grid-row: span 1;
+  background-color: white;
+  overflow: hidden;
+}
+.products .product-6 .prem-h {
+  background-color: #424649;
+  width: 100%;
+  height: 100px;
+  margin-top: 110%;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 0 20px 30px 20px;
+}
+.products .product-6 .prem-h i {
+  color: yellow;
+}
+.products .product-6:hover .prem-h {
+  margin-top: 83%;
+}
+.products .product-7 {
+  grid-column: span 1;
+  grid-row: span 1;
+  background-color: white;
+  overflow: hidden;
+}
+.products .product-7 .prem-h {
+  background-color: #424649;
+  width: 100%;
+  height: 100px;
+  margin-top: 110%;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 0 20px 30px 20px;
+}
+.products .product-7 .prem-h i {
+  color: yellow;
+}
+.products .product-7:hover .prem-h {
+  margin-top: 83%;
+}
+.products .product-8 {
+  grid-column: span 1;
+  grid-row: span 1;
+  background-color: white;
+  overflow: hidden;
+}
+.products .product-8 .prem-h {
+  background-color: #424649;
+  width: 100%;
+  height: 100px;
+  margin-top: 110%;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 0 20px 30px 20px;
+}
+.products .product-8 .prem-h i {
+  color: yellow;
+}
+.products .product-8:hover .prem-h {
+  margin-top: 83%;
+}
+.products .product-9 {
+  grid-column: span 1;
+  grid-row: span 1;
+  background-color: white;
+  overflow: hidden;
+}
+.products .product-9 .prem-h {
+  background-color: #424649;
+  width: 100%;
+  height: 100px;
+  margin-top: 110%;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 0 20px 30px 20px;
+}
+.products .product-9 .prem-h i {
+  color: yellow;
+}
+.products .product-9:hover .prem-h {
+  margin-top: 83%;
+}
+.products .product-10 {
+  grid-column: span 1;
+  grid-row: span 1;
+  background-color: white;
+  overflow: hidden;
+}
+.products .product-10 .prem-h {
+  background-color: #424649;
+  width: 100%;
+  height: 100px;
+  margin-top: 110%;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 0 20px 30px 20px;
+}
+.products .product-10 .prem-h i {
+  color: yellow;
+}
+.products .product-10:hover .prem-h {
+  margin-top: 83%;
+}
+.products .product-11 {
+  grid-column: span 1;
+  grid-row: span 1;
+  background-color: white;
+  overflow: hidden;
+}
+.products .product-11 .prem-h {
+  background-color: #424649;
+  width: 100%;
+  height: 100px;
+  margin-top: 110%;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 0 20px 30px 20px;
+}
+.products .product-11 .prem-h i {
+  color: yellow;
+}
+.products .product-11:hover .prem-h {
+  margin-top: 83%;
+}
+.products .product-12 {
+  grid-column: span 1;
+  grid-row: span 1;
+  background-color: white;
+  overflow: hidden;
+}
+.products .product-12 .prem-h {
+  background-color: #424649;
+  width: 100%;
+  height: 100px;
+  margin-top: 110%;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 0 20px 30px 20px;
+}
+.products .product-12 .prem-h i {
+  color: yellow;
+}
+.products .product-12:hover .prem-h {
+  margin-top: 83%;
+}
+.products .product-13 {
+  grid-column: span 1;
+  grid-row: span 1;
+  background-color: white;
+  overflow: hidden;
+}
+.products .product-13 .prem-h {
+  background-color: #424649;
+  width: 100%;
+  height: 100px;
+  margin-top: 110%;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 0 20px 30px 20px;
+}
+.products .product-13 .prem-h i {
+  color: yellow;
+}
+.products .product-13:hover .prem-h {
+  margin-top: 83%;
+}
+.products .product-14 {
+  grid-column: span 1;
+  grid-row: span 1;
+  background-color: white;
+  overflow: hidden;
+}
+.products .product-14 .prem-h {
+  background-color: #424649;
+  width: 100%;
+  height: 100px;
+  margin-top: 110%;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 0 20px 30px 20px;
+}
+.products .product-14 .prem-h i {
+  color: yellow;
+}
+.products .product-14:hover .prem-h {
+  margin-top: 83%;
+}
+.products .product-15 {
+  grid-column: span 1;
+  grid-row: span 1;
+  background-color: white;
+  overflow: hidden;
+}
+.products .product-15 .prem-h {
+  background-color: #424649;
+  width: 100%;
+  height: 100px;
+  margin-top: 110%;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 0 20px 30px 20px;
+}
+.products .product-15 .prem-h i {
+  color: yellow;
+}
+.products .product-15:hover .prem-h {
+  margin-top: 83%;
+}
+.products .product-16 {
+  grid-column: span 1;
+  grid-row: span 1;
+  background-color: white;
+  overflow: hidden;
+}
+.products .product-16 .prem-h {
+  background-color: #424649;
+  width: 100%;
+  height: 100px;
+  margin-top: 110%;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 0 20px 30px 20px;
+}
+.products .product-16 .prem-h i {
+  color: yellow;
+}
+.products .product-16:hover .prem-h {
+  margin-top: 83%;
+}
+.products .product-17 {
+  grid-column: span 1;
+  grid-row: span 1;
+  background-color: white;
+  overflow: hidden;
+}
+.products .product-17 .prem-h {
+  background-color: #424649;
+  width: 100%;
+  height: 100px;
+  margin-top: 110%;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 0 20px 30px 20px;
+}
+.products .product-17 .prem-h i {
+  color: yellow;
+}
+.products .product-17:hover .prem-h {
+  margin-top: 83%;
+}
+.products .product-18 {
+  grid-column: span 1;
+  grid-row: span 1;
+  background-color: white;
+  overflow: hidden;
+}
+.products .product-18 .prem-h {
+  background-color: #424649;
+  width: 100%;
+  height: 100px;
+  margin-top: 110%;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 0 20px 30px 20px;
+}
+.products .product-18 .prem-h i {
+  color: yellow;
+}
+.products .product-18:hover .prem-h {
+  margin-top: 83%;
+}
+.products .product-19 {
+  grid-column: span 1;
+  grid-row: span 1;
+  background-color: white;
+  overflow: hidden;
+}
+.products .product-19 .prem-h {
+  background-color: #424649;
+  width: 100%;
+  height: 100px;
+  margin-top: 110%;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 0 20px 30px 20px;
+}
+.products .product-19 .prem-h i {
+  color: yellow;
+}
+.products .product-19:hover .prem-h {
+  margin-top: 83%;
+}
+.products .product-20 {
+  grid-column: span 1;
+  grid-row: span 1;
+  background-color: white;
+  overflow: hidden;
+}
+.products .product-20 .prem-h {
+  background-color: #424649;
+  width: 100%;
+  height: 100px;
+  margin-top: 110%;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 0 20px 30px 20px;
+}
+.products .product-20 .prem-h i {
+  color: yellow;
+}
+.products .product-20:hover .prem-h {
+  margin-top: 83%;
+}
+
+.brands {
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+  margin-left: 60px;
+}
+.brands i {
+  cursor: pointer;
+}
+
+footer {
+  background-color: white;
+}
+footer .info {
+  display: flex;
+  padding: 60px;
+  color: black;
+}
+footer .info strong {
+  font-size: 27px;
+}
+footer .info ul {
+  font-weight: 400;
+  color: #303030;
+  line-height: 30px;
+}
+footer .info .ft-1 {
+  flex: 1;
+}
+footer .info .ft-1 p {
+  width: 250px;
+  margin-top: 50px;
+}
+footer .info .ft-2 {
+  flex: 1;
+}
+footer .info .ft-3 {
+  flex: 1;
+}
+footer .info .ft-4 {
+  flex: 1;
+}
+footer .copyright {
+  color: white;
+  background-color: #303030;
+  display: flex;
+  justify-content: space-between;
+  padding: 23px 60px;
+  font-weight: 400;
+}
+footer .copyright strong {
+  font-weight: 400;
+}/*# sourceMappingURL=search.css.map */
